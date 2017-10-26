@@ -25,25 +25,29 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<img src="images/Wikidata-logo-en.svg">
+					<img src="images/CMLogo.png">
+				</section>
+				<section>
+					<section><h1>What is ContentMine?</h1></section>
+					<section>
+						Peter Murray-Rust at Wikimania 2014
+						<img src="images/PMRWikimania.jpg">
+					</section>
+					<section>Tom and Charles</section>
+				</section>
+				<section>
+					<section><h1>What is WikiFactMine?</h1></section>
+					<section>WMF: Project Grant Funded</section>
+					<section><h1>Supported by:</h1>
+						<ul>
+							<li>WMF</li>
+							<li>WMUK</li>
+							<li>ContentMine</li>
+						<ul>
+					</section>
 				</section>
 				<section>
 					<section>What is Wikidata?</section>
-					<section>Free and Collaborative Knowledge Base</section>
-					<section>wikidata.org</section>
-				</section>
-				<section>
-					<section>What is Wikidata For?</section>
-					<section>To support the various Wikipedias:
-						<ul>
-							<li>Links to Different Languages</li>
-							<li>Language independent information</li>
-						<ul>
-					</section>
-					<section>As store of knowledge in its own right</section>
-				</section>
-				<section>
-					<section>How is Data Structured?</section>
 					<section>
 						<ul>
 							<li>Items</li>
@@ -54,67 +58,100 @@
 					<section><img src="images/statement.png"></section>
 				</section>
 				<section>
-					<section>Who else is using Wikidata?</section>
-					<section>Google Knowledge Graph
-						<img src="images/kgraph.png">
-					</section>
-					<section>EuroWings
-						<img src="images/ewings.jpg">
-					</section>
-					<section>Histropedia.com
-						<img src="images/hist.png">
-					</section>
-					<section>inventaire.io
-						<img src="images/invent.png">
-					</section>
-					<section>ContentMine (me)</section>
+					<section><h1>What is text mining?</h1></section>
+					<section>Extracting information from text with machines</section>
 				</section>
 				<section>
-					<section>How can you contribute to Wikidata?</section>
-					<section>Edit individual items
-						 <img src="images/edit.png">
-					</section>
-					<section>Play the games
-						<img src="images/game.png">
-					</section>
-				</section>
-				<section>
-					<section>How can you use Wikidata?</section>
+					<section><h1>What are we doing?</h1></section>
+					<section>Daily download of Open Access papers (mostly biomedical) from EuropePMC</section>
+					<section>Pluck out 'facts' Related to certain wikidata items</section>
 					<section>
-						<h1>SPARQL Queries</h1>
-						query.wikidata.org
+						<img src="images/WFM_Schematic.png">
 					</section>
-					<section>Battles Per Year By Country
-						<img src="images/battle.png">
+				</section>
+				<section>
+					<section>
+						<h1>What does a WikiFactMine 'fact' look like?</h1>
 					</section>
-					<section>List of countries ordered by the number of their cities with female mayor
+					<section>
 						<table class="table table-bordered table-hover table-condensed">
-							<tbody><tr>
-							<td>United States of America</td>
-							<td align="right">37</td>
-							</tr>
-							<tr>
-							<td>Spain</td>
-							<td align="right">33</td>
-							</tr>
-							<tr>
-							<td>Germany</td>
-							<td align="right">31</td>
-							</tr>
-							<tr>
-							<td>Czech Republic</td>
-							<td align="right">22</td>
-							</tr>
-							<tr>
-							<td>Russia</td>
-							<td align="right">12</td>
-							</tr>
-							</tbody></table>
+						<tr>
+							<th>ContentMine ID</th>
+							<th>Wikidata Item</th> 
+							<th>Paper</th>
+							<th>Prefix</th>
+							<th>Term</th>
+							<th>Postfix</th>
+						</tr>
+						<tr>
+							<td>CM.oncologydiseases3</td>
+							<td>Q128581</td> 
+							<td>PMC5537693</td>
+							<td>PDL1 has also been shown to be overexpressed in</td>
+							<td>breast cancer</td>
+							<td>cells, which underscores the significance of PDL1 as a target</td>
+						</tr>
+						</table>
 					</section>
-					<section><h1>API Access</h1>https://www.wikidata.org/w/api.php</section>
-					<section><h1>Javascript Client</h1>https://github.com/maxlath/wikidata-sdk</section>
-					<section><h1>python libraries</h1></section>
-					<section><h1>Java toolkit</h1>https://github.com/Wikidata/Wikidata-Toolkit</section>
+				</section>
+				<section>
+					<section>
+						<h1>What are Dictionaries?</h1>
+					</section>
+					<section>
+						List of terms for us to search for
+					</section>
+					<section>Obtained from various sources including Wikidata</section>
+					<section>You can make your own and we'll mine the literature for them</section>
+					<section>Currently around 300k terms in ca. 80 dictionaries</section>
+					<section>
+						<p>From topic areas like:</p>
+
+						<ul>
+							<li>Diseases</li>
+							<li>Drugs</li>
+							<li>Soil Types</li>
+							<li>Many more...</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>fatameh</h1>
+					</section>
+					<section>Nearly 3 Million Wikidata Items About Scientific Papers Edited using the Tool</section>
+				</section>
+				<section>
+					<section><h1>How can you get involved with WikiFactMine?</h1></section>
+					<section>Build dictionaries for areas you're interested in
+						 <img src="images/aaraa.png">
+					</section>
+					<section>
+						<img src="images/aaraaadd.png">
+					</section>
+					<section><p>Build something with our API</p>
+						<img src="images/api.png">
+					</section>
+					<section>Give us feedback about the facts so far</section>
+				</section>
+				<section>
+					<section><h1>What tools have we built?</h1></section>
+					<section>WikiFactMine Pipeline</section>
+					<section>WikiFactMine API</section>
+					<section>aaraa</section>
+					<section>fatameh</section>
+					<section>WikiFactMine Wikidata Userscript</section>
+					<section>FactVis</section>
+				</section>
+				<section>
+					<section><h1>Where are we going next?</h1></section>
+					<section><h1>Gamification to find dictionaries with more likelyhood of success</h1></section>
+					<section><h1>Add main topic statements to items about papers using PST</h1></section>
+					<section><h1>Return papers which contain entities in unreferenced statements</h1></section>
+				</section>
+				<section>
+					Where to find more:
+					https://wikidata.org/wiki/Wikidata:WFM
 				</section>
 			</div>
 		</div>
@@ -127,6 +164,8 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				width: "100%",
+				height: "100%",
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
